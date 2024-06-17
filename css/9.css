@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f1f1; 
+ background-image: url(../image/%E8%83%8C%E6%99%AF%E5%9B%BE1.png); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+
+ 
+}
+
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+	background-image: url(../image/%E8%83%8C%E6%99%AF%E5%9B%BE.png);
+	font-size: 20px;
+	color: #FF0;
+	 
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:#066;
+}
+ 
+.topnav a {
+  float: left;
+  display: block;
+  color:#FFF;
+  text-align: center;
+  padding: 14px 80px;
+  text-decoration: none;
+}
+ 
+
+.topnav a:hover {
+  background-color:#F00;
+  color:#0FF;
+}
+ .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+		
+		
+.login-form {
+  width: 100%;
+  max-width: 300px;
+ margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-image: url(../image/%E8%83%8C%E6%99%AF%E5%9B%BE2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.advertisement {
+  text-align: right;
+  margin: 20px;
+}
+form-container {
+  margin-top: 100px; 
+}

@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+	background-image: url(../image/%E8%83%8C%E6%99%AF%E5%9B%BE.png);
+	color: #FF0;
+	font-size: 20px;
+	
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:#066;
+}
+ 
+
+.topnav a {
+  float: left;
+  display: block;
+  color:#FFF;
+  text-align: center;
+  padding: 14px 80px;
+  text-decoration: none;
+}
+ 
+
+.topnav a:hover {
+  background-color:#F00;
+  color:#0FF;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; 
+}
+
+.cell {
+  position: relative; 
+  width: 30%; 
+  min-width: 200px; 
+  padding: 10px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+    overflow: hidden;
+}
+
+.slide {
+  display: none; 
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transform: translateY(-50%);
+  user-select: none;
+  z-index: 1;
+  opacity: 0.6;
+  transition: opacity 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.header-time-container {
+            position: fixed;
+            top: 0;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 41px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif;
+        }
+		 .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+		
+		 .carousel {
+    position: relative;
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .carousel-button.prev {
+    left: 10px;
+  }
+  .carousel-button.next {
+    right: 10px;
+  }
+  .slide:not(.active) {
+    display: none;
+  }
+  .slide.active {
+    display: block;
+  }
+  .carousel-slides .slide {
+  width: 100%;
+  height: 400px; 
+  position: relative; 
+}
+
+
+.carousel-slides .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+}
+  </style>
